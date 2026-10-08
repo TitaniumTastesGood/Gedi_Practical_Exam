@@ -139,3 +139,23 @@ tile_set = SubResource("TileSet_vao7y")
 [node name="Enemy_Spawner_1" type="Node2D" parent="Spawners" unique_id=1387100134]
 position = Vector2(32, 86)
 script = ExtResource("3_hn12h")
+
+[node name="Enemy_Spawner_2" type="Node2D" parent="Spawners" unique_id=1970866579]
+position = Vector2(1121, 342)
+script = ExtResource("3_hn12h")
+
+[node name="Enemy_Spawner_3" type="Node2D" parent="Spawners" unique_id=841576196]
+position = Vector2(1125, 196)
+script = ExtResource("3_hn12h")
+
+[node name="Enemy_Spawner_4" type="Node2D" parent="Spawners" unique_id=1091551381]
+position = Vector2(619, 612)
+script = ExtResource("3_hn12h")
+
+[node name="Enemy_Spawner_5" type="Node2D" parent="Spawners" unique_id=1161434807]
+position = Vector2(966, 464)
+script = ExtResource("3_hn12h")
+
+[node name="Enemy_Spawner_6" type="Node2D" parent="Spawners" unique_id=1401077904]
+position = Vector2(47, 337)
+script = ExtResource("3_hn12h")

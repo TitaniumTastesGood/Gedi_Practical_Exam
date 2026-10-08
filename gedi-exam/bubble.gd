@@ -4,6 +4,7 @@ var move_dir = Vector2.ZERO
 var has_friction = false
 var shooter
 var damage = 1
+var captured_enemy = null
 var piercing = false
 var horizontal_move = 0
 var vertical_move = 0
@@ -19,3 +20,12 @@ func _physics_process(delta):
 
 func destroy():
 	get_tree().queue_delete(self)
+
+func pop():
+	if captured_enemy != null:
+		captured_enemy.die()
+	destroy()
+
+func _on_body_entered(body):
+	if body.name == "JohnBubble":
+		pop()

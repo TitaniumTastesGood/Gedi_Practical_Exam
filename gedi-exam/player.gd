@@ -71,6 +71,7 @@ func _on_hitbox_area_entered(area):
 				area.destroy()
 
 func _on_hitbox_body_entered(body):
+	print(body)
 	if body == self:
 		return
 	if "deals_contact_damage" in body:
