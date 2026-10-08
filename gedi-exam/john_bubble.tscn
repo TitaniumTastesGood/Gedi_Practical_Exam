@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://didcksm0ajvt0"]
+
+[ext_resource type="Script" uid="uid://ci58rombii0x3" path="res://player.gd" id="1_74637"]
+[ext_resource type="Texture2D" uid="uid://due63t1yaagp1" path="res://icon.svg" id="2_5dmau"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vao7y"]
+size = Vector2(28, 29)
+
+[node name="JohnBubble" type="CharacterBody2D" unique_id=143256573]
+script = ExtResource("1_74637")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2018586188]
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("2_5dmau")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=475038489]
+position = Vector2(0, 0.5)
+shape = SubResource("RectangleShape2D_vao7y")
