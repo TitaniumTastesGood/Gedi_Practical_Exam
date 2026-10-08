@@ -7,7 +7,7 @@ var can_fire = true
 var dead = false
 
 func _ready():
-	max_hp = 24
+	max_hp = 1
 	facing_direction = Vector2.RIGHT
 	super()
 
@@ -27,6 +27,8 @@ func attack():
 	bullet.position = self.position + (facing_direction * 30)
 	bullet.move_dir = facing_direction
 	bullet.horizontal_move = facing_direction.x * 7
+	bullet.vertical_move = -3
+	bullet.has_friction = true
 	bullet.half_life = 60
 	bullet.shooter = self
 	get_parent().add_child(bullet)
@@ -73,4 +75,4 @@ func _on_hitbox_body_entered(body):
 		return
 	if "deals_contact_damage" in body:
 		if body.deals_contact_damage:
-			take_damage(body.damage)
+			take_damage(1)

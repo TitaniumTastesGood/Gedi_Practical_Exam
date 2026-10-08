@@ -7,6 +7,8 @@
 radius = 13.0
 
 [node name="Bubble" type="Area2D" unique_id=1735500041]
+collision_layer = 3
+collision_mask = 3
 script = ExtResource("1_y2db8")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1653341573]

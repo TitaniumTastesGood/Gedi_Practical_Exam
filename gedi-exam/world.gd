@@ -2,7 +2,7 @@ extends Node2D
 
 func _ready():
 	var player = load("res://john_bubble.tscn").instantiate()
-	player.position = Vector2(500, 500)
+	player.position = Vector2(188, 464)
 	add_child(player)
 
 

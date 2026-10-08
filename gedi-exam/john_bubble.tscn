@@ -16,3 +16,12 @@ texture = ExtResource("2_5dmau")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=475038489]
 position = Vector2(0, 0.5)
 shape = SubResource("RectangleShape2D_vao7y")
+
+[node name="Hitbox" type="Area2D" parent="." unique_id=1901013953]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox" unique_id=876641457]
+position = Vector2(0, 0.5)
+shape = SubResource("RectangleShape2D_vao7y")
+
+[connection signal="area_entered" from="Hitbox" to="." method="_on_hitbox_area_entered"]
+[connection signal="body_entered" from="Hitbox" to="." method="_on_hitbox_body_entered"]
